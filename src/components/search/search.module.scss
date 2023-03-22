@@ -1,0 +1,28 @@
+$focus-color: #cacacacc;
+
+.header_search {
+    display: flex;
+    align-items: center;
+
+    input {
+        width: 250px;
+        height: 40px;
+        border: none;
+        outline: none;
+        background-color: inherit;
+        border-radius: 15px;
+        background: url('/src/assets/search.png') no-repeat;
+        background-size: 10%;
+        background-position: 95% 50%;
+        text-indent: 5px;
+
+        &:hover {
+            background-color: $focus-color;
+            transition: 0.2s ease;
+        }
+
+        &:focus {
+            background-color: $focus-color;
+        }
+    }
+}

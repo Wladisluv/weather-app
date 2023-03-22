@@ -1,0 +1,15 @@
+.header {
+    .container {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        max-width: 950px;
+        height: 60px;
+    
+        .header_right {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

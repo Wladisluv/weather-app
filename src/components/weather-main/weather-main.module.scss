@@ -1,0 +1,23 @@
+.wrapper {
+    margin-top: 20px;
+    width: 685px;
+    height: 800px;
+    background-color: #fff;
+    border-radius: 5%;
+    background-color: #b9b9b9;
+
+    @media (max-width: 1400px) {
+        margin: 0 auto;
+        margin-top: 20px;
+      }
+  
+      @media (max-width: 1060px) {
+        margin: 0 auto;
+        margin-top: 20px;
+      }
+  
+      @media (max-width: 730px) {
+        margin: 0 auto;
+        margin-top: 20px;
+      }
+}
