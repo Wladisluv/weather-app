@@ -4,7 +4,9 @@
     height: 800px;
     background-color: #fff;
     border-radius: 5%;
-    background-color: #b9b9b9;
+    background-image: url('/src/assets/sunny-mountain.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 
     @media (max-width: 1400px) {
         margin: 0 auto;
