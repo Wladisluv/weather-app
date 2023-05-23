@@ -1,9 +1,16 @@
 import styles from './header.module.scss';
 import Search from '../search/Search';
-import ThemeBtn from '../theme-btn/ThemeBtn';
 import Switch from '../switch/Switch'
+import { useCustomDispatch } from '../../hooks/store';
+import { useEffect } from 'react';
+import { fetchCurrentWeather } from '../../store/thunks/fetchCurrentWeather';
+import { Weather } from '../../types/types';
 
-const Header = () => {
+interface Props {
+  weather: Weather;
+}
+
+const Header = ({weather}: Props) => {
   const days = [
     'Sunday',
     'Monday',
@@ -15,12 +22,13 @@ const Header = () => {
   ];
   let d = new Date();
   let n = d.getDay();
+
   return (
     <div className={styles.header}>
       <div className={styles.container}>
         <Search />
         <div className={styles.header_right}>
-          <h2>{days[n]}, 7C</h2>
+          <h2>{days[n]}, {Math.round(weather.main.temp)}°C</h2>
           <Switch />
         </div>
       </div>
