@@ -1,6 +1,7 @@
 import styles from './header.module.scss';
 import Search from '../search/Search';
 import ThemeBtn from '../theme-btn/ThemeBtn';
+import Switch from '../switch/Switch'
 
 const Header = () => {
   const days = [
@@ -20,7 +21,7 @@ const Header = () => {
         <Search />
         <div className={styles.header_right}>
           <h2>{days[n]}, 7C</h2>
-          <ThemeBtn />
+          <Switch />
         </div>
       </div>
     </div>
