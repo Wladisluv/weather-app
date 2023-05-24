@@ -7,4 +7,4 @@ export class WeatherService {
   Promise<AxiosResponse<Weather>> {
     return api.get<Weather>(`/weather?q=${city}`) 
   }
-} 
+}

@@ -1,6 +1,6 @@
 .wrapper {
-    display: flex;
-    justify-content: space-between;
+    // display: flex;
+    // justify-content: space-between;
     margin-top: 20px;
     width: 685px;
     height: 800px;
@@ -26,26 +26,38 @@
       }
 }
 
-.main_block {
-  padding: 40px 0 0 20px;
+.inner {
+  display: flex;
+  justify-content: space-between;
 
-  .city_title {
-    font-size: 62px;
+  .main_block {
+    padding: 40px 0 0 20px;
+  
+    .city_title {
+      font-size: 62px;
+    }
+  
+    p {
+      font-size: 28px;
+    }
+  
+    .weather_descr { 
+      margin-top: -60px;
+      font-size: 32px;
+      letter-spacing: 2px;
+    }
   }
-
-  p {
-    font-size: 28px;
-  }
-
-  .weather_descr { 
-    margin-top: -60px;
+  
+  
+  .temp_block {
+    padding: 40px 20px 0 0;
     font-size: 32px;
-    letter-spacing: 2px;
   }
 }
 
-
-.temp_block {
-  padding: 40px 20px 0 0;
-  font-size: 32px;
+.icon {
+  margin-top: -10px;
+  margin-left: -20px;
+  width: 256px;
+  height: 256px;
 }

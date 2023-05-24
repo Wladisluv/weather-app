@@ -1,17 +1,19 @@
 import styles from './weather-main.module.scss';
+import AdvancedWeather from '../advanced-weather/AdvancedWeather';
 import { fetchCurrentWeather } from '../../store/thunks/fetchCurrentWeather';
 import { useCustomDispatch } from '../../hooks/store';
 import { useEffect, useState } from 'react';
-import { Location, Weather } from '../../types/types';
+import { HourlyWeather, Location, Weather } from '../../types/types';
 import { fetchCurrentLocation } from '../../store/thunks/fetchCurrentLocation';
 import { WeatherIcons } from '../weather-icons/WeatherIcons';
 
 interface Props {
   weather: Weather;
   location: Location;
+  hourlyWeather: HourlyWeather
 }
 
-const WeatherMain = ({weather, location}: Props) => {
+const WeatherMain = ({weather, location, hourlyWeather}: Props) => {
   const dispatch = useCustomDispatch();
 
   useEffect(() => {
@@ -24,22 +26,23 @@ const WeatherMain = ({weather, location}: Props) => {
     day: 'numeric',
     month: 'long',
   });
-
-  console.log(weather);
   
 
   return (
     <div className={styles.wrapper}>
+      <div className={styles.inner}>
       <div className={styles.main_block}>
         <h1 className={styles.city_title}>{location.location.city}Krasnodar</h1>
         <p>{date}</p>
-        <WeatherIcons weather={weather}/>
+        <WeatherIcons weather={weather} icon={styles.icon}/>
         <h2 className={styles.weather_descr}>Cloudy</h2>
       </div>
 
       <div className={styles.temp_block}>
       <h1>{Math.round(weather.main.temp)}°C</h1>
       </div>
+      </div>
+      <AdvancedWeather weather={weather} hourlyWeather={hourlyWeather}/>
     </div>
   );
 };

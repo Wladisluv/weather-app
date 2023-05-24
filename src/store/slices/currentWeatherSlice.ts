@@ -23,8 +23,10 @@ const initialState: CurrentWeather = {
     {
       main: '',
     }
-  ]
+  ],
   },
+
+
   isLoading: false,
   response: {
     status: 0,

@@ -7,8 +7,15 @@ export type Weather = {
     {
       main: string;
     }
-  ]
+  ],
 };
+
+export type HourlyWeather = {
+    hourly: [{
+      dt: number;
+      temp: number;
+    }]
+}
 
 export type Location = {
   location: {
