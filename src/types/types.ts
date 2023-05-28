@@ -1,4 +1,5 @@
 export type Weather = {
+  dt: number;
   main: {
     temp: number;
     humidity: number;
@@ -20,6 +21,19 @@ export type Weather = {
 };
 
 export type HourlyWeather = {
+    daily: [{
+      dt: number;
+
+      temp: {
+        min: number;
+        max: number;
+      },
+
+      weather: [{
+        id: number;
+      }]
+    }],
+
     hourly: [{
       dt: number;
       temp: number;

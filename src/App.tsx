@@ -18,7 +18,7 @@ const App = () => {
           <WeatherMain weather={weather} location={location} hourlyWeather={hourlyWeather}/>
           <div className={styles.right}>
             <WeatherMap />
-            <WeatherWeek />
+            <WeatherWeek weather={weather} hourlyWeather={hourlyWeather} location={location}/>
           </div>
         </div>
       </div>

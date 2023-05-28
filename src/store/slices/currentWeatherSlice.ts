@@ -15,6 +15,7 @@ type Response = {
 
 const initialState: CurrentWeather = {
   weather: {
+    dt: 0,
     main: {
       temp: 0,
       humidity: 0,
@@ -33,7 +34,7 @@ const initialState: CurrentWeather = {
   wind: {
     speed: 0
   }
-  },
+},
 
 
   isLoading: false,
