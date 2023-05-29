@@ -33,7 +33,7 @@ const WeatherMain = ({weather, location, hourlyWeather}: Props) => {
     <div className={styles.wrapper}>
       <div className={styles.inner}>
       <div className={styles.main_block}>
-        <h1 className={styles.city_title}>{location.location.city}Krasnodar</h1>
+        <h1 className={styles.city_title}>{location.location.city}</h1>
         <p>{date}</p>
         <img
       src={WeatherIcons(weather.weather[0].id)}

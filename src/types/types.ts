@@ -45,9 +45,9 @@ export type HourlyWeather = {
 }
 
 export type Location = {
-  location: {
-    city: string;
-    lat: number;
-    lng: number;
-  }
+    location: {
+      city: string;
+      lat: number;
+      lng: number;
+    }
 };
