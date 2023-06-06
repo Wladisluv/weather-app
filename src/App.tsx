@@ -13,7 +13,7 @@ const App = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
-        <Header weather={weather}/>
+        <Header weather={weather} location={location}/>
         <div className={styles.main}>
           <WeatherMain weather={weather} location={location} hourlyWeather={hourlyWeather}/>
           <div className={styles.right}>

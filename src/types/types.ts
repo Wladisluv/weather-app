@@ -8,6 +8,8 @@ export type Weather = {
     temp_max: number;
   },
 
+  name: string;
+
   weather: [
     {
       main: string;

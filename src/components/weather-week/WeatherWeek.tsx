@@ -36,6 +36,8 @@ const WeatherWeek = ({weather, hourlyWeather, location}: Props) => {
                   tempMin={Math.round(obj.temp.min)}
                   tempMax={Math.round(obj.temp.max)}
                   weatherId={obj.weather[0].id}
+                  weather={weather}
+                  location={location}
                   key={`${obj.dt}_${index}`}
                 />
             );

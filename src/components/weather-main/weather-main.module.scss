@@ -1,10 +1,12 @@
+@import '/src/scss/variables.module.scss';
+
 .wrapper {
     margin-top: 20px;
     width: 685px;
     height: 800px;
     background-color: #fff;
     border-radius: 5%;
-    background-image: url('/src/assets/sunny-mountain.jpg');
+    background-image: var(#{--main-component-background-image-default});
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -27,6 +29,7 @@
 .inner {
   display: flex;
   justify-content: space-between;
+  margin-top: -20px;
 
   .main_block {
     padding: 40px 0 0 20px;

@@ -1,10 +1,12 @@
+@import '/src/scss/variables.module.scss';
+
 .wrapper {
     margin-top: 20px;
     width: 685px;
     height: 390px;
     background-color: #fff;
     border-radius: 5%;
-    background-image: url('/src/assets/sunny-mountain-week.jpg');
+    background-image: var(#{--week-component-background-image-default});
     background-size: cover;
     background-repeat: no-repeat;
 

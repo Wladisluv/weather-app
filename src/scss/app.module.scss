@@ -1,5 +1,11 @@
 @import './libs/normalize';
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
+@import './variables.module.scss';
+
+body {
+  background: var(#{--body-background-default});
+  color: var(#{--text-color-default});
+}
 
 .wrapper {
     font-family: 'Open Sans', sans-serif;

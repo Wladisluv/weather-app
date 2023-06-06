@@ -6,22 +6,14 @@ import { useEffect, useState } from 'react';
 import { HourlyWeather, Location, Weather } from '../../types/types';
 import { fetchCurrentLocation } from '../../store/thunks/fetchCurrentLocation';
 import { WeatherIcons } from '../weather-icons/WeatherIcons';
-import WeatherBlock from '../weather-block/WeatherBlock';
 
 interface Props {
   weather: Weather;
   location: Location;
-  hourlyWeather: HourlyWeather
+  hourlyWeather: HourlyWeather;
 }
 
-const WeatherMain = ({weather, location, hourlyWeather}: Props) => {
-  const dispatch = useCustomDispatch();
-
-  useEffect(() => {
-    // dispatch(fetchCurrentLocation());
-    dispatch(fetchCurrentWeather('Krasnodar'))
-  }, []);
-
+  const WeatherMain = ({weather, location, hourlyWeather}: Props) => {
   const date = new Date().toLocaleString('en',
   {
     day: 'numeric',
@@ -33,7 +25,7 @@ const WeatherMain = ({weather, location, hourlyWeather}: Props) => {
     <div className={styles.wrapper}>
       <div className={styles.inner}>
       <div className={styles.main_block}>
-        <h1 className={styles.city_title}>{location.location.city}</h1>
+        <h1 className={styles.city_title}>{weather.name}</h1>
         <p>{date}</p>
         <img
       src={WeatherIcons(weather.weather[0].id)}

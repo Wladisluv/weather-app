@@ -23,7 +23,9 @@ const initialState: CurrentWeather = {
       temp_min: 0,
       temp_max: 0,
     },
-
+    
+    name: '',
+    
   weather: [
     {
       main: '',
