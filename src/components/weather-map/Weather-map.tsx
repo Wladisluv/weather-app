@@ -5,6 +5,9 @@ import { useCustomDispatch } from '../../hooks/store';
 import { fetchCurrentLocation } from '../../store/thunks/fetchCurrentLocation';
 import { MapContainer, TileLayer, Marker, useMap } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
+import "leaflet/dist/images/marker-icon.png";
+import "leaflet/dist/images/marker-icon-2x.png";
+import "leaflet/dist/images/marker-shadow.png";
 
 interface Props {
   location: Location;
