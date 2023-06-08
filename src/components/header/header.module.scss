@@ -16,6 +16,10 @@
           &__logo {
             display: flex;
             align-items: center;
+
+            .logo * {
+              fill: #fff;
+            }
           }
         }
     
