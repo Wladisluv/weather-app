@@ -1,0 +1,33 @@
+$body-background-dark: #000000cc;
+$body-background-light: #fff;
+
+$main-component-background-image-dark: url('/src/assets/night-mountain.jpg');
+$main-component-background-image-light: url('/src/assets/sunny-mountain.jpg');
+
+$week-component-background-image-dark: url('/src/assets/night-mountain-week.jpg');
+$week-component-background-image-light: url('/src/assets/sunny-mountain-week.jpg');
+
+$dark-color: #ffffff;
+$light-color: #0a0a0a;
+
+:root {
+  // body
+  --body-background-dark: #{$body-background-dark};
+  --body-background-light: #{$body-background-light};
+  --body-background-default: var(#{--body-background-light});
+
+  //main component
+  --main-component-background-image-dark: #{$main-component-background-image-dark};
+  --main-component-background-image-light: #{$main-component-background-image-light};
+  --main-component-background-image-default: var(#{--main-component-background-image-light});
+
+  //week component
+  --week-component-background-image-dark: #{$week-component-background-image-dark};
+  --week-component-background-image-light: #{$week-component-background-image-light};
+  --week-component-background-image-default: var(#{--week-component-background-image-light});
+
+  //text
+  --text-color-dark: #{$dark-color};
+  --text-color-light: #{$light-color};
+  --text-color-default: var(#{--text-color-light});
+}

@@ -1,0 +1,14 @@
+.weather_detail {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+
+  &__icon * {
+    fill: #fff;
+  }
+  
+  p {
+    text-align: center;
+    font-size: 22px;
+  }
+}

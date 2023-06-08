@@ -5,11 +5,12 @@ import WeatherWeek from './components/weather-week/WeatherWeek';
 import { useCustomSelector } from './hooks/store';
 import styles from './scss/app.module.scss';
 import { selectCurrentLocationData, selectCurrentWeatherData, selectHourlyWeatherData } from './store/selectors';
+import { createBrowserRouter, RouterProvider, Link } from 'react-router-dom';
 
 const App = () => {
-  const { weather } = useCustomSelector(selectCurrentWeatherData)
-  const { location } = useCustomSelector(selectCurrentLocationData)
-  const { hourlyWeather } = useCustomSelector(selectHourlyWeatherData)
+  const { weather } = useCustomSelector(selectCurrentWeatherData);
+  const { location } = useCustomSelector(selectCurrentLocationData);
+  const { hourlyWeather } = useCustomSelector(selectHourlyWeatherData);
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
