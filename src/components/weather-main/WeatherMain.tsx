@@ -19,6 +19,12 @@ interface Props {
     day: 'numeric',
     month: 'long',
   });
+
+  const dispatch = useCustomDispatch();
+
+  useEffect(() => {
+    dispatch(fetchCurrentLocation());
+  }, []);
   
 
   return (

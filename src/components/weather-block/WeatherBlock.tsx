@@ -14,8 +14,6 @@ interface weatherBlockProps {
 
 const WeatherBlock = ({weatherId, tempMin, tempMax, weatherDate, weatherUnit, location, weather}: weatherBlockProps) => {
   const date = new Date(weatherDate * 1000);
-
-  console.log(weather.name);
   
 
   return (

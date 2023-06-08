@@ -18,8 +18,6 @@ const Search = ({location}: Props) => {
   const [city, setCity] = useState(location.location.city);
   
   const [weatherData, setWeatherData] = useState(null);
-  const [hourlyWeatherData, setHourlyWeatherData] = useState([0, 0]);
-  console.log(`city > ${city}`);
   
   
 
