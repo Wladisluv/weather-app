@@ -30,3 +30,21 @@
         }
     }
 }
+
+@media (max-width: 1400px) {
+  .container {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    .container {
+      .header_left {
+        &__logo {
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -26,3 +26,11 @@ $focus-color: #cacacacc;
         }
     }
 }
+
+@media (max-width: 400px) {
+  .header_search {
+    input {
+      width: 170px;
+    }
+  }
+}

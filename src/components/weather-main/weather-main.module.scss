@@ -71,3 +71,48 @@
   width: 256px;
   height: 256px;
 }
+
+@media (max-width: 400px) {
+  .wrapper {
+    margin: 0;
+    width: 350px;
+  }
+
+  .inner {
+    .main_block {
+      .city_title {
+        font-size: 22px;
+      }
+      p {
+        padding-top: 5px;
+        font-size: 22px;
+      }
+      
+      .weather_descr {
+        font-size: 28px;
+      }
+
+
+    }
+    
+    .temp_block {
+      font-size: 22px;
+    }
+  }
+
+  .icon {
+    width: 180px;
+    height: 180px;
+  }
+
+  .sunny {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 400px) {
+  .wrapper {
+    border-radius: 3%;
+  }
+}

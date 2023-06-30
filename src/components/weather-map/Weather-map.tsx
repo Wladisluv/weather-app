@@ -5,9 +5,8 @@ import { useCustomDispatch } from '../../hooks/store';
 import { fetchCurrentLocation } from '../../store/thunks/fetchCurrentLocation';
 import { MapContainer, TileLayer, Marker, useMap } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
-import "leaflet/dist/images/marker-icon.png";
-import "leaflet/dist/images/marker-icon-2x.png";
-import "leaflet/dist/images/marker-shadow.png";
+import markerIconPng from "leaflet/dist/images/marker-icon.png";
+import {Icon} from 'leaflet';
 
 interface Props {
   location: Location;
@@ -40,7 +39,7 @@ const WeatherMap = ({location}: Props) => {
           attribution='<a href="https://openweathermap.org/">Openweathermap</a>'
           url="https://tile.openweathermap.org/map/temp_new/{z}/{x}/{y}.png?appid=68e0afb55f84682ae49f209717878748"
         />
-      <Marker position={[location.location.lat, location.location.lng]}></Marker>
+      <Marker position={[location.location.lat, location.location.lng]} icon={new Icon({iconUrl: markerIconPng, iconSize: [25, 41], iconAnchor: [12, 41]})}></Marker>
     </MapContainer>
       </div>
     </div>

@@ -6,4 +6,7 @@ import svgr from "vite-plugin-svgr";
 export default defineConfig({
   base: '/weather-app/',
   plugins: [react(), svgr(),],
+  server: {
+    host: true,
+  }
 })

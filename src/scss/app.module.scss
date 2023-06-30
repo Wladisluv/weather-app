@@ -10,7 +10,7 @@ body {
 .wrapper {
     font-family: 'Open Sans', sans-serif;
     margin: 0 auto;
-    width: 100vw;
+    width: 100%;
 }
 
 .container {
@@ -22,16 +22,20 @@ body {
     display: grid;
     grid-template-areas: "b b a" "b b c" "b b c";
     gap: 15px;
+}
 
-    @media (max-width: 1400px) {
-        grid-template-areas: "none";
-      }
-  
-      @media (max-width: 1060px) {
-        grid-template-areas: "none";
-      }
-  
-      @media (max-width: 730px) {
-        grid-template-areas: "none";
-      }
+@media (max-width: 1400px) {
+  .main {
+    grid-template-areas: "none";
+  }
+
+  .container {
+    margin: 20px;
+  }
+}
+
+  @media (max-width: 1060px) {
+    .main {
+      grid-template-areas: "none";
+    }
 }

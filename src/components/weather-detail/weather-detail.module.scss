@@ -12,3 +12,10 @@
     font-size: 22px;
   }
 }
+
+@media (max-width: 400px) {
+  .weather_detail {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
